@@ -84,8 +84,8 @@ namespace NIDAQ_Zstage
 
             long SN = device.SerialNumber;
             serialNumber = SN.ToString();
-            DevID = device.DeviceID;
             DevList = myTask.Devices;
+            DevID = device.DeviceID;
             DevBusType = device.BusType;
 
 
@@ -254,7 +254,7 @@ namespace NIDAQ_Zstage
             try
                 {
                 //device.Home(60000);     // for Thorlabs K cube
-                device.Reset();
+                device.Reset();             // these classes prob just reset the PCI-6251 instead of the Z motor stage itself
                 device.SelfCalibrate();
                 }
             catch (DeviceNotReadyException)
@@ -273,6 +273,7 @@ namespace NIDAQ_Zstage
 
             }       
 
+        // these triggerSloppeRising etc might provide the signal for driving the motor; look further into the methods()
         public void triggerSlopeRising(object sender, System.EventArgs e)
             {
             triggerSlope = AnalogEdgeStartTriggerSlope.Rising;

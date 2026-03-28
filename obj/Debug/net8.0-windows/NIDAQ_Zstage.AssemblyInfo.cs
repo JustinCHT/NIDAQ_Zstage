@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("NIDAQ_Zstage")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ed97dd603387fff22a4ac6c95c8b1354cc1b66d3")]
 [assembly: System.Reflection.AssemblyProductAttribute("NIDAQ_Zstage")]
 [assembly: System.Reflection.AssemblyTitleAttribute("NIDAQ_Zstage")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
